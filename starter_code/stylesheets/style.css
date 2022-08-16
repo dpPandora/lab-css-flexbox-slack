@@ -5,3 +5,137 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    max-width: 100vw;
+}
+
+body > * {
+    border: 1px dotted red;
+    width: 100%;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid #5b5e6d;
+}
+
+nav > * {
+    margin: auto 2vw;
+}
+
+nav > img {
+    width: 100px;
+    object-fit: scale-down;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header h1 {
+    color: #2C303F;
+    margin: 10px 6%;
+    margin-top: 5vw;
+    width: 88%;
+    font-size: 10vw;
+}
+
+header p {
+    color: #5b5e6d;
+    margin: 10px 6%;
+    width: 88%;
+    font-size: 4.5vw;
+    letter-spacing: 0.18vw;
+}
+
+header button {
+    margin: 10px 6%;
+    width: 88%;
+    height: 12vw;
+    background-color: #192592;
+    border: 0;
+    border-radius: 2vw;
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+#signIn {
+    font-size: 4vw;
+    margin-top: 15px;
+    text-align: center;
+}
+
+header img {
+    margin: 10px 6%;
+    margin-top: 50px;
+    width: 88%;
+}
+
+main {
+    background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main #mainTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 10%;
+}
+
+main #mainTop h2 {
+    color:#2C303F;
+    font-size: 7vw;
+    margin: 15px auto;
+}
+
+main #mainTop p {
+    color: #5b5e6d;
+    font-size: 4vw;
+    margin: 15px 10px;
+}
+
+main #mainTop button {
+    width: 100%;
+    height: 12vw;
+    background-color: white;
+    border: 1px solid #192592;
+    border-radius: 2vw;
+    font-weight: bold;
+    font-size: 3vw;
+    color: #192592;
+}
+
+main div {
+    text-align: center;
+}
+
+main img {
+    width: 40%;
+    margin: 5vw 30%;
+}
+
+main #mainBottom {
+    width: 100%;
+    padding: 10px auto;
+    background-color: white;
+}
