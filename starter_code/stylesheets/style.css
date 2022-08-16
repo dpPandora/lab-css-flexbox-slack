@@ -6,6 +6,19 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
+.placeHolderForm {
+    margin: 10px 6%;
+    width: 88%;
+    height: 12vw;
+    border: 1px solid #5b5e6d;
+    border-radius: 2vw;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     /*display: flex;*/
     /*flex-direction: column;*/
@@ -43,6 +56,10 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+header div {
+    width: 100%;
 }
 
 header h1 {
@@ -152,7 +169,7 @@ main #mainBottom p {
 }
 
 main #mainBottom button {
-    width: 80%;
+    width: 88%;
     height: 12vw;
     background-color: #192592;
     border: 0;
@@ -236,4 +253,32 @@ footer #links {
     align-items: center;
     margin: 10px 25vw;
     color: #5b5e6d;
+}
+
+@media (min-width: 767px) {
+    header h1 {
+        align-self: flex-start;
+        font-size: 9vw;
+    }
+    
+    header p {
+        font-size: 4vw;
+    }
+
+    header button {
+        width: 35%;
+        margin-left: 5px;
+        font-size: 2.8vw;
+    }
+
+    header .placeHolderForm {
+        width: 70%;
+        margin-right: 5px;
+    }
+
+    .Input {
+        align-self: flex-start;
+        width: 80%;
+        display: flex;
+    }    
 }
