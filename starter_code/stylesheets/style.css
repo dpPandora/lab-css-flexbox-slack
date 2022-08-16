@@ -15,7 +15,6 @@ body {
 }
 
 body > * {
-    border: 1px dotted red;
     width: 100%;
 }
 
@@ -27,15 +26,15 @@ nav {
     margin: 0;
     top: 0;
     background-color: white;
-    border-bottom: 2px solid #5b5e6d;
+    border-bottom: 1px solid #5b5e6da4;
 }
 
 nav > * {
-    margin: auto 2vw;
+    margin: 10px 2vw;
 }
 
 nav > img {
-    width: 100px;
+    width: 150px;
     object-fit: scale-down;
 }
 
@@ -69,7 +68,7 @@ header button {
     background-color: #192592;
     border: 0;
     border-radius: 2vw;
-    color: white;
+    color: #F4F3F4;
     font-weight: bold;
     font-size: 3vw;
 }
@@ -138,4 +137,103 @@ main #mainBottom {
     width: 100%;
     padding: 10px auto;
     background-color: white;
+}
+
+main #mainBottom h3 {
+    font-size: 4vw;
+    color: #2C303F;
+    margin-bottom: 10px;
+}
+
+main #mainBottom p {
+    font-size: 3vw;
+    color: #5b5e6d;
+    margin: 10px auto;
+}
+
+main #mainBottom button {
+    width: 80%;
+    height: 12vw;
+    background-color: #192592;
+    border: 0;
+    border-radius: 2vw;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #F4F3F4;
+}
+
+footer #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#slackLogoEnd {
+    width: 150px;
+    margin-bottom: 0;
+}
+
+#links ul {
+    display: inline;
+    width: 40%;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    color: #5b5e6d;
+    font-size: 3.5vw;
+    line-height: 5vw;
+}
+
+#links ul > li {
+    max-width: 30vw;
+}
+
+#footer {
+    background-color: #F4F3F4;
+}
+
+#statusC {
+    padding-top: 5px;
+}
+
+#statusC ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 4vw;
+    color: #5b5e6d;
+    font-weight: bold;
+}
+
+#endLang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5b5e6d;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+#endLang img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+#endLang i {
+    margin-left: 5px;
+}
+
+#media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 25vw;
+    color: #5b5e6d;
 }
