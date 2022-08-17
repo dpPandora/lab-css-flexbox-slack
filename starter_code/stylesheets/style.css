@@ -83,6 +83,16 @@ nav > img {
     object-fit: scale-down;
 }
 
+nav svg {
+    margin-right: 75px;
+    width: 50px;
+}
+
+nav ul {
+    display: none;
+    margin-right: 6%;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -355,9 +365,16 @@ footer #links {
     #statusC li {
         margin: 30px;
     }
+
+    header img {
+        width: 650px;
+    }
 }
 
 @media (min-width: 960px) {
+    header img {
+        align-self: flex-start;
+    }
     #mainImg {
         width: 100vw;
         justify-content: space-around;
@@ -370,5 +387,17 @@ footer #links {
 }
 
 @media (min-width: 1200px) {
+    nav svg {
+        display: none;
+    }
 
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li {
+        color: #5b5e6d;
+        margin: auto 20px;
+    }
 }
