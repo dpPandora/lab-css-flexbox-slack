@@ -400,4 +400,23 @@ footer #links {
         color: #5b5e6d;
         margin: auto 20px;
     }
+    
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        align-self:auto;
+    }
+
+    header img {
+        width:100%;
+        max-width: 650px;
+        margin-right: 10px;
+        margin-left: 50px;
+        object-fit: scale-down;
+    }
 }
