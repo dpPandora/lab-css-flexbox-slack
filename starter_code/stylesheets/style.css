@@ -14,6 +14,38 @@ nav grey: #5b5e6d;
     border-radius: 2vw;
 }
 
+.button {
+    margin: 10px 6%;
+    width: 88%;
+    height: 12vw;
+    background-color: #192592;
+    border: 0;
+    border-radius: 2vw;
+    color: #F4F3F4;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.Input {
+    width: 100%;
+}
+
+.fontSmol {
+    font-size: 3vw;
+}
+
+.fontSmolMed {
+    font-size: 4.2vw;
+}
+
+.fontMed {
+    font-size: 7vw;
+}
+
+.fontLarg {
+    font-size: 10vw;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -67,31 +99,16 @@ header h1 {
     margin: 10px 6%;
     margin-top: 5vw;
     width: 88%;
-    font-size: 10vw;
 }
 
 header p {
     color: #5b5e6d;
     margin: 10px 6%;
     width: 88%;
-    font-size: 4.5vw;
     letter-spacing: 0.18vw;
 }
 
-header button {
-    margin: 10px 6%;
-    width: 88%;
-    height: 12vw;
-    background-color: #192592;
-    border: 0;
-    border-radius: 2vw;
-    color: #F4F3F4;
-    font-weight: bold;
-    font-size: 3vw;
-}
-
 #signIn {
-    font-size: 4vw;
     margin-top: 15px;
     text-align: center;
 }
@@ -120,13 +137,11 @@ main #mainTop {
 
 main #mainTop h2 {
     color:#2C303F;
-    font-size: 7vw;
     margin: 15px auto;
 }
 
 main #mainTop p {
     color: #5b5e6d;
-    font-size: 4vw;
     margin: 15px 10px;
 }
 
@@ -137,7 +152,6 @@ main #mainTop button {
     border: 1px solid #192592;
     border-radius: 2vw;
     font-weight: bold;
-    font-size: 3vw;
     color: #192592;
 }
 
@@ -154,31 +168,17 @@ main #mainBottom {
     width: 100%;
     padding: 10px auto;
     background-color: white;
+    border-bottom: 1px solid #5b5e6da4;
 }
 
 main #mainBottom h3 {
-    font-size: 4vw;
     color: #2C303F;
     margin-bottom: 10px;
 }
 
 main #mainBottom p {
-    font-size: 3vw;
     color: #5b5e6d;
     margin: 10px auto;
-}
-
-main #mainBottom button {
-    width: 88%;
-    height: 12vw;
-    background-color: #192592;
-    border: 0;
-    border-radius: 2vw;
-    font-weight: bold;
-    font-size: 3vw;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: #F4F3F4;
 }
 
 footer #links {
@@ -224,7 +224,7 @@ footer #links {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 4vw;
+    text-align: center;
     color: #5b5e6d;
     font-weight: bold;
 }
@@ -256,29 +256,119 @@ footer #links {
 }
 
 @media (min-width: 767px) {
+
+    .fontSmol{
+        font-size: 25px;
+    }
+
+    .fontSmolMed {
+        font-size: 35px;
+    }
+
+    .fontMed {
+        font-size: 50px;
+    }
+
+    .fontLarg {
+        font-size: 69px;
+    }
     header h1 {
         align-self: flex-start;
-        font-size: 9vw;
     }
-    
+    /*i should create font classes,,, but is it worth the effort*/  
+    /*fucking fine i will, how long could it take honestly*/
     header p {
-        font-size: 4vw;
+        align-self: flex-start;
+        width: 660px
     }
 
-    header button {
-        width: 35%;
+    .button {
+        width: 190px;
+        height: 80px;
+        border-radius: 10px;
         margin-left: 5px;
-        font-size: 2.8vw;
+        margin-right: 5px;
+        font-size: 20px;
     }
 
-    header .placeHolderForm {
-        width: 70%;
+    .placeHolderForm {
+        width: 500px;
+        height: 80px;
+        border-radius: 10px;
         margin-right: 5px;
+        margin-left: 5px;
     }
 
     .Input {
         align-self: flex-start;
         width: 80%;
+        margin-left: 6%;
         display: flex;
-    }    
+        align-items: stretch;
+    }
+
+    #mainBottom .Input {
+        margin-left: 5px;
+    }
+
+    #mainTop .button {
+        height: 80px;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    #mainBottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #divMBS {
+        width: 250px;
+    }
+
+    #mainImg {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #mainImg img {
+        margin: 30px 2vw;
+        object-fit: scale-down;
+    }
+
+    #links ul {
+        font-size: 22px;
+        line-height: 50px;
+        width: 180px;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #statusC li {
+        margin: 30px;
+    }
+}
+
+@media (min-width: 960px) {
+    #mainImg {
+        width: 100vw;
+        justify-content: space-around;
+    }
+    
+    #mainImg img {
+        width: 200px;
+        margin: 50px 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+
 }
